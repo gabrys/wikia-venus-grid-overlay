@@ -1,7 +1,7 @@
 {
   "name": "Wikia Venus Grid Overlay",
   "description": "Puts an overlay over Wikia pages which use the Venus skin for debugging purposes.",
-  "version": "1.0",
+  "version": "1.0.1",
   "permissions": [
     "activeTab"
   ],
