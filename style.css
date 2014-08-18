@@ -1,0 +1,71 @@
+.debug-grid-overlay {
+	padding: 0 20px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+
+.debug-grid-overlay .column,
+.debug-grid-overlay .gutter {
+	float: left;
+	height: 100%;
+	opacity: .3;
+}
+
+.debug-grid-overlay .column {
+	background-color: #8CD8FE;
+	padding: 0 12px;
+	width: 82px;
+}
+
+.debug-grid-overlay .gutter {
+	width: 12px;
+}
+
+.debug-grid-overlay .column .column-content {
+	background-color: #23C0FB;
+	height: 100%;
+	position: absolute;
+	width: 58px;
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+	.debug-grid-overlay {
+		padding: 0 19px;
+	}
+
+	.debug-grid-overlay .column {
+		padding: 0 10px;
+		width: 73px;
+	}
+
+	.debug-grid-overlay .gutter {
+		width: 10px;
+	}
+
+	.debug-grid-overlay .column .column-content {
+		width: 53px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.debug-grid-overlay {
+		padding: 0 16px;
+	}
+
+	.debug-grid-overlay .column {
+		padding: 0 8px;
+		width: 54px;
+	}
+
+	.debug-grid-overlay .gutter {
+		width: 8px;
+	}
+
+	.debug-grid-overlay .column .column-content {
+		width: 38px;
+	}
+}
+
