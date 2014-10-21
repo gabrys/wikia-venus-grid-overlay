@@ -1,14 +1,14 @@
 if (document.readyState === 'complete' || document.readyState === 'loaded' || document.readyState === 'interactive') {
 	if (!firstRun) {
 		var firstRun = true,
-				columnHtml = '<div class=\"column\"><div class=\"column-content\"></div></div>',
-				gutterHtml = '<div class=\"gutter\"></div>',
+				columnHtml = '<div class=\"column border-box\"><div class=\"column-content border-box\"></div></div>',
+				gutterHtml = '<div class=\"gutter border-box\"></div>',
 				warpperHtml = '',
 				wrapper = document.createElement('div'),
 				wikiaPage,
 				i;
 
-		wrapper.className = 'debug-grid-overlay';
+		wrapper.className = 'debug-grid-overlay border-box';
 
 		for (i = 0; i < 11; i++) {
 			warpperHtml += columnHtml + gutterHtml

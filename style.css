@@ -1,5 +1,11 @@
+.debug-grid-overlay .border-box {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 .debug-grid-overlay {
-	padding: 0 20px;
+	padding: 0 19px; /* -1px for border */
 	height: 100%;
 	position: fixed;
 	top: 0;
@@ -31,9 +37,9 @@
 }
 
 
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+@media only screen and (min-width: 1024px) and (max-width: 1496px) {
 	.debug-grid-overlay {
-		padding: 0 19px;
+		padding: 0 18px; /* -1px for border */
 	}
 
 	.debug-grid-overlay .column {
@@ -52,7 +58,7 @@
 
 @media only screen and (max-width: 1023px) {
 	.debug-grid-overlay {
-		padding: 0 16px;
+		padding: 0 15px; /* -1px for border */
 	}
 
 	.debug-grid-overlay .column {
